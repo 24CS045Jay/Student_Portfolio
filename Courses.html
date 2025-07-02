@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Courses - Student Portal</title>
+  <link rel="stylesheet" href="courses.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>📚 My Completed and Running Courses</h2>
+
+      <div class="year-buttons">
+        <button onclick="showYear('sem1')">SEM 1</button>
+        <button onclick="showYear('sem2')">SEM 2</button>
+        <button onclick="showYear('sem3')">SEM 3</button>
+        <button onclick="showYear('sem4')">SEM 4</button>
+      </div>
+
+      <div id="sem1" class="subject-list">
+        <h3>1st Semester Subjects</h3>
+        <ul>
+          <li>Engineering Mathematics I</li>
+          <li>Basic Electronics & Electrical Engineering</li>
+          <li>Computer Concepts & Programming</li>
+          <li>ICT Workshop</li>
+          <li>Communicative English</li>
+          <li>Engineering Physics I</li>
+        </ul>
+      </div>
+
+      <div id="sem2" class="subject-list">
+        <h3>2nd Semester Subjects</h3>
+        <ul>
+          <li>Engineering Mathematics II</li>
+          <li>OOP with C++</li>
+          <li>Environmental Sciences</li>
+          <li>Digital Electronics</li>
+          <li>Elements of Engineering</li>
+          <li>Engineering Physics II</li>
+        </ul>
+      </div>
+
+      <div id="sem3" class="subject-list">
+        <h3>3rd Semester Subjects</h3>
+        <ul>
+          <li>OOP with JAVA</li>
+          <li>Engineering Mathematics III</li>
+          <li>Web Development Framework</li>
+          <li>Data Structures & Algorithms</li>
+          <li>Computer Networks</li>
+        </ul>
+      </div>
+
+  
+
+      <a href="index.html" class="btn-home">🏠 Back to Home</a>
+    </div>
+  </div>
+
+  <script>
+    function showYear(semId) {
+      const sections = document.querySelectorAll('.subject-list');
+      sections.forEach(sec => sec.style.display = 'none');
+      document.getElementById(semId).style.display = 'block';
+    }
+    showYear('sem1'); // Show SEM 1 by default
+  </script>
+</body>
+</html>

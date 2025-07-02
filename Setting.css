@@ -1,0 +1,110 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.settings-card {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.setting-option {
+  margin: 20px 0;
+}
+
+.setting-option label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.setting-option button {
+  padding: 8px 15px;
+  background: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.setting-option button:hover {
+  background: #16a085;
+}
+
+.btn-home {
+  margin-top: 30px;
+  display: inline-block;
+  background: #34495e;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.btn-home:hover {
+  background: #2c3e50;
+}
+/* Hover effects */
+
+a:hover,
+.btn-home:hover,
+button:hover {
+  background-color: #16a085;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Table row hover */
+table tr:hover {
+  background-color: #f1fdfc;
+  transition: background 0.3s ease;
+}
+
+/* Input focus (feedback/settings) */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #1abc9c;
+  box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
+  transition: 0.3s;
+}
+
+/* Download/material links (materials page) */
+.semester ul li a:hover {
+  background: #1abc9c;
+  color: white;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Year buttons (courses/settings) */
+.year-buttons button:hover,
+.setting-option button:hover {
+  background: #16a085;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Card hover (optional for fun) */
+.card:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+}
+

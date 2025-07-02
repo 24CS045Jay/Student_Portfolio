@@ -1,0 +1,85 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #ecf0f1;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  min-height: 100vh;
+}
+
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: left;
+}
+
+.card h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.semester {
+  margin-bottom: 25px;
+}
+
+.semester h3 {
+  color: #1abc9c;
+  margin-bottom: 10px;
+}
+
+.semester ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.semester ul li {
+  margin: 8px 0;
+}
+
+.semester ul li a {
+  text-decoration: none;
+  color: #34495e;
+  background-color: #e1f7f5;
+  padding: 8px 12px;
+  display: inline-block;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.semester ul li a:hover {
+  background-color: #1abc9c;
+  color: white;
+}
+
+.btn-home {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  background: #1abc9c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.btn-home:hover {
+  background: #16a085;
+}
+
+.footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}

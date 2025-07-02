@@ -1,0 +1,103 @@
+/* === Global Styles === */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  margin: 0;
+  padding: 0;
+  color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* === Container Center === */
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === Card === */
+.card {
+  background: linear-gradient(to bottom right, #ffffff, #f0fdfa);
+  padding: 50px 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* === Heading === */
+.card h2 {
+  font-size: 2em;
+  margin-bottom: 25px;
+  color: #00796b;
+  text-shadow: 1px 1px #b2dfdb;
+}
+
+/* === Achievements List === */
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card ul li {
+  margin: 12px 0;
+  font-size: 1.15em;
+  background-color: #e0f2f1;
+  padding: 12px;
+  border-radius: 10px;
+  color: #004d40;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.card ul li:hover {
+  background-color: #b2dfdb;
+  transform: scale(1.03);
+  font-weight: bold;
+}
+
+/* === Back to Home Button === */
+.btn-home {
+  margin-top: 30px;
+  display: inline-block;
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(26, 188, 156, 0.4);
+  transition: all 0.3s ease;
+}
+
+.btn-home:hover {
+  background: linear-gradient(135deg, #16a085, #0e7e6b);
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* === Utility Effects === */
+a:hover {
+  text-decoration: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #1abc9c;
+  box-shadow: 0 0 6px rgba(26, 188, 156, 0.6);
+  transition: 0.3s;
+}
